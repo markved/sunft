@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import data from "../data/data.json";
+import data from "../_data/data.json";
 import ProjectCard from '../components/project-card'
 import Layout from '../components/layout'
 import SEO from "../components/seo";
