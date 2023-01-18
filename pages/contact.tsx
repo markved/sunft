@@ -1,6 +1,6 @@
-import Layout from "./components/layout";
+import Layout from "../components/layout";
 import data from '../data/data.json';
-import SEO from "./components/seo";
+import SEO from "../components/seo";
 
 interface Props {
     contact: {

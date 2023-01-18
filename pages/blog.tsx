@@ -1,4 +1,4 @@
-import Layout from "./components/layout";
+import Layout from "../components/layout";
 import data from '../data/blog.json'
 
 interface Props {
