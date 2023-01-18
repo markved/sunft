@@ -1,0 +1,41 @@
+{
+  "skills": [
+    "JavaScript",
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB"
+  ],
+  "experience": [
+    "5 years of experience in web development",
+    "Worked on various projects using React and Node.js",
+    "Experience with building and deploying web applications"
+  ],
+  "projects": [
+    {
+      "title": "Project 1",
+      "description": "A web application built using React and Node.js",
+      "link": "https://github.com/username/project1"
+    },
+    {
+      "title": "Project 2",
+      "description": "A mobile application built using React Native",
+      "link": "https://github.com/username/project2"
+    },
+    {
+      "title": "Project 3",
+      "description": "A serverless application built using Node.js and AWS Lambda",
+      "link": "https://github.com/username/project3"
+    }
+  ],
+  "education": [
+    "Bachelor's degree in Computer Science from XYZ University",
+    "Master's degree in Software Engineering from ABC University"
+  ],
+  "contact": {
+    "email": "your_email@example.com",
+    "phone": "123-456-7890",
+    "location": "Your City, Your Country"
+  }
+}
