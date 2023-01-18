@@ -11,6 +11,7 @@ interface Portfolio {
   education: string[];
   contact: { email: string; phone: string; location: string };
 }
+
 // the Index component is being used to render the data fetched from the data.json file.
 const Index = ({ skills, experience, projects, education, contact }: Portfolio) => {
   return (

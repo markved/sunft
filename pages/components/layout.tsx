@@ -29,6 +29,7 @@ const Layout = ({ children, title = "My App" }: Props) => {
           <div className="flex items-center">
             <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/' && 'text-blue-600'}`} onClick={() => handleClick("/")}>Home</a>
             <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/about' && 'text-blue-600'}`} onClick={() => handleClick("/about")}>About</a>
+            <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/project' && 'text-blue-600'}`} onClick={() => handleClick("/project")}>Project</a>
             <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/blog' && 'text-blue-600'}`} onClick={() => handleClick("/blog")}>Blog</a>
             <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/contact' && 'text-blue-600'}`} onClick={() => handleClick("/contact")}>Contact</a>
           </div>
