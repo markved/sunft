@@ -1,12 +1,15 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { BlogPost, BlogProps } from "../interfaces";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Post from "./posts/[id]";
-import data from "../data/blog.json";
+import { getAllPosts } from '../lib/api'
+import Post from '../interfaces/post'
 
-const Blog = ({ blogs }: BlogProps) => {
+type Props = {
+    allPosts: Post[]
+}
+
+const Blog = ({ allPosts }: Props) => {
     const router = useRouter();
     return (
         <>
@@ -19,18 +22,17 @@ const Blog = ({ blogs }: BlogProps) => {
                 <div className="bg-white p-4">
                     <h1 className="text-2xl font-medium text-gray-800">Blog</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                        {blogs.map((post: BlogPost) => (
-                            <div key={post.id} className="bg-white p-4 rounded-lg shadow-md">
+                        {allPosts.map((post: Post) => (
+                            <div key={post.title} className="bg-white p-4 rounded-lg shadow-md">
                                 <h2 className="text-lg font-medium text-gray-800">{post.title}</h2>
-                                <p className="text-gray-600">{post.description}</p>
+                                <p className="text-gray-600">{post.excerpt}</p>
                                 <div className="text-right">
                                     <button
                                         className="bg-indigo-500 text-white p-2 rounded-lg"
                                         onClick={() => {
-                                            console.log(`post id: ${post.id}, router: ${JSON.stringify(router.pathname)}`)
-                                            router.push(`/blog/${post.id}`, `/blog/${post.id}`, { shallow: true })                                        
+                                            router.push(`/posts/${post.slug}`, `/posts/${post.slug}`, { shallow: true })
                                         }
-                                    }
+                                        }
                                     >
                                         Read More
                                     </button>
@@ -39,21 +41,23 @@ const Blog = ({ blogs }: BlogProps) => {
                         ))}
                     </div>
                 </div>
-                {router.pathname === '/blog/[id]' && <Post post={data.posts.find((post) => {
-                    console.log(`post id: ${post.id}, router id: ${Number(router.query.id)}`)
-                    post.id === Number(router.query.id)
-                }
-                )} />}
             </Layout>
         </>
     );
 };
 
 export const getStaticProps = async () => {
+    const allPosts = getAllPosts([
+        'title',
+        'date',
+        'slug',
+        'author',
+        'coverImage',
+        'excerpt',
+    ])
+
     return {
-        props: {
-            blogs: data.posts
-        },
+        props: { allPosts },
     }
 }
 
