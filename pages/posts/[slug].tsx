@@ -1,6 +1,5 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { BlogPost } from "../../interfaces";
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
 import Layout from "../../components/layout";
