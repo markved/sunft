@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
 interface Props {
@@ -10,7 +9,7 @@ interface Props {
 const Layout = ({ children, title = "My App" }: Props) => {
   const router = useRouter();
 
-  const handleClick = (path:string) => {
+  const handleClick = (path: string) => {
     router.push(path);
   }
 
