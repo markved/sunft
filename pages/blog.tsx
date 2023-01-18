@@ -1,37 +1,60 @@
+import React from "react";
+import { useRouter } from "next/router";
+import { BlogPost, BlogProps } from "../interfaces";
 import Layout from "../components/layout";
-import data from '../data/blog.json'
+import SEO from "../components/seo";
+import Post from "./posts/[id]";
+import data from "../data/blog.json";
 
-interface Props {
-  posts: { title: string; description: string; link: string }[];
-}
-
-const Blog = ({ posts }: Props) => {
-  return (
-    <Layout title="Blog">
-      <div className="bg-white p-4">
-        <h2 className="text-lg font-medium text-gray-800">Blog</h2>
-        {posts ? (
-          <ul>
-            {posts.map((post, index) => (
-              <li key={index} className="text-gray-600">
-                <a href={post.link}>{post.title}</a> - {post.description}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p>No blog posts found.</p>
-        )}
-      </div>
-    </Layout>
-  );
+const Blog = ({ blogs }: BlogProps) => {
+    const router = useRouter();
+    return (
+        <>
+            <SEO
+                title="Blog"
+                description="This is the blog page for my portfolio website"
+                image="https://example.com/image.jpg"
+            />
+            <Layout title="Blog">
+                <div className="bg-white p-4">
+                    <h1 className="text-2xl font-medium text-gray-800">Blog</h1>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        {blogs.map((post: BlogPost) => (
+                            <div key={post.id} className="bg-white p-4 rounded-lg shadow-md">
+                                <h2 className="text-lg font-medium text-gray-800">{post.title}</h2>
+                                <p className="text-gray-600">{post.description}</p>
+                                <div className="text-right">
+                                    <button
+                                        className="bg-indigo-500 text-white p-2 rounded-lg"
+                                        onClick={() => {
+                                            console.log(`post id: ${post.id}, router: ${JSON.stringify(router.pathname)}`)
+                                            router.push(`/blog/${post.id}`, `/blog/${post.id}`, { shallow: true })                                        
+                                        }
+                                    }
+                                    >
+                                        Read More
+                                    </button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                {router.pathname === '/blog/[id]' && <Post post={data.posts.find((post) => {
+                    console.log(`post id: ${post.id}, router id: ${Number(router.query.id)}`)
+                    post.id === Number(router.query.id)
+                }
+                )} />}
+            </Layout>
+        </>
+    );
 };
 
 export const getStaticProps = async () => {
-  return {
-    props: {
-      posts: data.posts
-    },
-  }
+    return {
+        props: {
+            blogs: data.posts
+        },
+    }
 }
 
 export default Blog;
