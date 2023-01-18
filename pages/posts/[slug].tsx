@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useRouter } from "next/router";
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import markdownToHtml from '../../lib/markdownToHtml'
@@ -7,6 +7,7 @@ import SEO from "../../components/seo";
 import ErrorPage from "next/error";
 import type PostType from '../../interfaces/post'
 import PostBody from "../../components/post-body";
+import Image from "next/image"
 
 type Props = {
   post: PostType  
@@ -14,23 +15,30 @@ type Props = {
 
 const Post = ({ post }: Props) => {
   const router = useRouter();  
-  if (!post) {
+  const [blogPost, setBlogPost] = useState<PostType | null>(null);
+
+  useEffect(() => {
+    setBlogPost(post);
+  }, [post]);
+
+  if (!blogPost) {
     return <ErrorPage statusCode={404} />;
   }
 
   return (
     <>
       <SEO
-        title={post.title}
-        description={post.excerpt}
-        image="https://example.com/image.jpg"
+        title={blogPost.title}
+        description={blogPost.excerpt}
+        image={blogPost.ogImage.url}
       />
-      <Layout title={post.title}>
+      <Layout title={blogPost.title}>
         <div className="bg-white p-4">
           <h1 className="text-2xl font-medium text-gray-800">
-            {post.title}
+            {blogPost.title}
           </h1>
-          <p className="text-gray-600"><PostBody content={post.content}/></p>
+          {/* <Image alt="" width={500} height={500} src={blogPost.ogImage.url}/> */}
+          <PostBody content={blogPost.content}/>
           <div className="text-right">
             <button
               className="bg-indigo-500 text-white p-2 rounded-lg"

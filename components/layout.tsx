@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import SocialMedia from "./social-media";
 
 interface Props {
   children: React.ReactNode;
@@ -22,8 +23,8 @@ const Layout = ({ children, title = "My App" }: Props) => {
       </Head>
       <header className="bg-white p-4">
         <nav className="flex items-center justify-between">
-          <a href="#" className="text-lg font-medium text-gray-800">
-            My App
+          <a href="/" className="text-lg font-medium text-gray-800">
+            Ved Mishra | Full Stack, Blockchain
           </a>
           <div className="flex items-center">
             <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/' && 'text-blue-600'}`} onClick={() => handleClick("/")}>Home</a>
@@ -36,7 +37,7 @@ const Layout = ({ children, title = "My App" }: Props) => {
       </header>
       <main className="container mx-auto p-4">{children}</main>
       <footer className="bg-white p-4">
-        <p className="text-center text-gray-600">Copyright © {new Date().getFullYear()} My App</p>
+        <p className="text-center text-gray-600"><SocialMedia/> Copyright © {new Date().getFullYear()}</p>
       </footer>
     </div>
   );
