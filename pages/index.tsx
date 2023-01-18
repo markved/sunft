@@ -1,86 +1,66 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import { GetStaticProps } from "next";
+import data from "../data/data.json";
+import ProjectCard from './components/project-card'
+import Layout from './components/layout'
+import SEO from "./components/seo";
 
-const Home: NextPage = () => {
-  return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
-    </div>
-  )
+interface Portfolio {
+  skills: string[];
+  experience: string[];
+  projects: { title: string; description: string; link: string }[];
+  education: string[];
+  contact: { email: string; phone: string; location: string };
 }
+// the Index component is being used to render the data fetched from the data.json file.
+const Index = ({ skills, experience, projects, education, contact }: Portfolio) => {
+  return (
+    <>
+      <SEO
+        title="Homepage"
+        description="This is the homepage for my portfolio website"
+        image="https://example.com/image.jpg"
+      />
+      <Layout title="Home Page">
+        <div>
+          <div className="text-center">
+            <h1 className="text-3xl font-medium mb-4">Skills</h1>
+            <ul className="list-none pl-5">
+              {skills.map((skill) => (
+                <li key={skill} className="mb-2 text-lg">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+            <h1 className="text-3xl font-medium mb-4">Experience</h1>
+            <ul className="list-none pl-5">
+              {experience.map((exp) => (
+                <li key={exp} className="mb-2 text-lg">
+                  {exp}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {projects.map((project) => (
+              <ProjectCard key={project.title} project={project} />
+            ))}
+          </div>
+        </div>
+      </Layout>
+    </>
+  );
+};
+// the getStaticProps function is used to fetch the data from the data.json file at BUILD TIME and pass it to the Index component.
+export const getStaticProps: GetStaticProps<Portfolio> = async () => {
+  return {
+    props: {
+      skills: data.skills,
+      experience: data.experience,
+      projects: data.projects,
+      education: data.education,
+      contact: data.contact,
+    },
+  };
+};
 
-export default Home
+export default Index;
