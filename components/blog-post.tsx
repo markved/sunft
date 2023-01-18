@@ -26,7 +26,7 @@ const BlogPost = ({ title, content, date, id }: Props) => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const data = await import("../data/blog.json");
-  const post = data.posts.find((p) => p.id === context?.params?.id);
+  const post = data.posts.find((p) => p.id === Number(context?.params?.id));
   return {
     props: {
       title: post?.title,

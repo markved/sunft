@@ -26,9 +26,8 @@ const Blog = ({ blogs }: BlogProps) => {
                                 <div className="text-right">
                                     <button
                                         className="bg-indigo-500 text-white p-2 rounded-lg"
-                                        onClick={() => {
-                                            console.log(`post id: ${post.id}, router: ${JSON.stringify(router.pathname)}`)
-                                            router.push(`/blog/${post.id}`, `/blog/${post.id}`, { shallow: true })                                        
+                                        onClick={() => {                                           
+                                            router.push(`/posts/${post.id}`, `/posts/${post.id}`, { shallow: true })                                        
                                         }
                                     }
                                     >
