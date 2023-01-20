@@ -20,7 +20,7 @@ const SocialShare = ({title}:Props) => {
       <LinkedinIcon size={32} round />
       </LinkedinShareButton>
 
-      <FacebookShareButton url={document.location.href} quote={title}>
+      <FacebookShareButton url={document.location.origin}>
       <FacebookIcon size={32} round />
       </FacebookShareButton>
 

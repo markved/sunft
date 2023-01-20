@@ -6,14 +6,15 @@ import SEO from "../components/seo";
 
 interface Portfolio {
   skills: string[];
-  experience: string[];
+  certifications: string[];
+  experience: string[];  
   projects: { title: string; description: string; link: string }[];
   education: string[];
-  contact: { email: string; phone: string; location: string };
+  contact: { email: string; phone: string; location: string };  
 }
 
 // the Index component is being used to render the data fetched from the data.json file.
-const Index = ({ skills, experience, projects, education, contact }: Portfolio) => {
+const Index = ({ skills, experience, certifications, projects, education, contact }: Portfolio) => {
   return (
     <>
       <SEO
@@ -23,7 +24,11 @@ const Index = ({ skills, experience, projects, education, contact }: Portfolio) 
       />
       <Layout title="Home Page">
         <div>
+          
+
           <div className="text-center">
+          <div className="grid grid-cols-2">            
+            <div className="col-span-1">
             <h1 className="text-3xl font-medium mb-4">Skills</h1>
             <ul className="list-none pl-5">
               {skills.map((skill) => (
@@ -32,6 +37,20 @@ const Index = ({ skills, experience, projects, education, contact }: Portfolio) 
                 </li>
               ))}
             </ul>
+            </div>
+            <div className="col-span-1">
+            <h1 className="text-3xl font-medium mb-4">Certifications</h1>
+            <ul className="list-none pl-5">
+              {certifications.map((certification) => (
+                <li key={certification} className="mb-2 text-lg">
+                  {certification}
+                </li>
+              ))}
+            </ul>
+            </div>
+          </div>
+
+            
             <h1 className="text-3xl font-medium mb-4">Experience</h1>
             <ul className="list-none pl-5">
               {experience.map((exp) => (
@@ -56,6 +75,7 @@ export const getStaticProps: GetStaticProps<Portfolio> = async () => {
   return {
     props: {
       skills: data.skills,
+      certifications: data.certifications,
       experience: data.experience,
       projects: data.projects,
       education: data.education,
