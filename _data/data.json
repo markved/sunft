@@ -1,12 +1,13 @@
 {
   "skills": [
-    "FrontEnd: JavaScript, TypeScript, React",   
-    "BackEnd: Node.js, Express, Nest.js",
-    "Database: PostgreSQL, MongoDB",
-    "Cluld: AWS, Azure",
-    "DevOps: Docker, Kubernetes, GitHub Actions",
-   "Blockchain: Solidity, Ethereum, Web3.js",
-   "BackEnd Languages: C#, Python, C++"
+    "Front End: React, NextJS, Angular, TypeScript, JavaScript",
+    "Back End: C#, C++, .NET, NestJS, Python, PowerShell",
+    "UI: Tailwind CSS, Ant Design, Material UI, Bootstrap",
+    "Blockchain: Solidity, OZ, Rust, MetaMask/Phantom, Ethereum/Solana",
+    "Data: SQL, XML, JSON, Azure function, API, GraphQL, ReST, JSONRPC",
+    "Data Analytics: Power BI, Tableau, Spotfire, Crystal Reports",
+    "IDE/Environments: Visual Studio Code, Visual Studio, NodeJS",
+    "CI/CD: Azure DevOps, AWS, JIRA, Github"
   ],
   "certifications": [
     "Microsoft Certified Professional (MCP) in SQL (70-229)",
