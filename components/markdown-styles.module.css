@@ -2,11 +2,17 @@
   @apply text-lg leading-relaxed;
 }
 
-.markdown p,
 .markdown ul,
-.markdown ol,
-.markdown blockquote {
+.markdown ol {
+  @apply my-2 list-decimal;
+}
+
+.markdown p {
   @apply my-6;
+}
+
+.markdown blockquote {
+  @apply pl-4 border-l-4 border-gray-300;
 }
 
 .markdown h2 {

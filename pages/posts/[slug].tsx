@@ -7,7 +7,7 @@ import SEO from "../../components/seo";
 import ErrorPage from "next/error";
 import type PostType from '../../interfaces/post'
 import PostBody from "../../components/post-body";
-import Image from "next/image"
+import SocialShare from "../../components/social-share";
 
 type Props = {
   post: PostType  
@@ -16,6 +16,12 @@ type Props = {
 const Post = ({ post }: Props) => {
   const router = useRouter();  
   const [blogPost, setBlogPost] = useState<PostType | null>(null);
+
+  // set isMounted to false initially to load social share icons after page load
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     setBlogPost(post);
@@ -37,7 +43,7 @@ const Post = ({ post }: Props) => {
           <h1 className="text-2xl font-medium text-gray-800">
             {blogPost.title}
           </h1>
-          {/* <Image alt="" width={500} height={500} src={blogPost.ogImage.url}/> */}
+          {isMounted && <SocialShare title={blogPost.title} />}
           <PostBody content={blogPost.content}/>
           <div className="text-right">
             <button

@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import SocialMedia from "./social-media";
@@ -9,12 +10,17 @@ interface Props {
 
 const Layout = ({ children, title = "My App" }: Props) => {
   const router = useRouter();
+  // set isMounted to false initially to load social media icons after page load
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const handleClick = (path: string) => {
     router.push(path);
   }
 
-  return (
+  return (    
     <div className="bg-gray-200 min-h-screen">
       <Head>
         <title>{title}</title>
@@ -37,7 +43,8 @@ const Layout = ({ children, title = "My App" }: Props) => {
       </header>
       <main className="container mx-auto p-4">{children}</main>
       <footer className="bg-white p-4">
-        <p className="text-center text-gray-600"><SocialMedia/> Copyright © {new Date().getFullYear()}</p>
+       
+        <div className="text-center text-gray-600">  {isMounted && <SocialMedia/>} Copyright © {new Date().getFullYear()}</div>
       </footer>
     </div>
   );
