@@ -1,37 +1,45 @@
 {
   "skills": [
-    "JavaScript",
-    "React",
-    "TypeScript",
-    "Node.js",
-    "Express",
-    "MongoDB"
+    "FrontEnd: JavaScript, TypeScript, React",   
+    "BackEnd: Node.js, Express, Nest.js",
+    "Database: PostgreSQL, MongoDB",
+    "Cluld: AWS, Azure",
+    "DevOps: Docker, Kubernetes, GitHub Actions",
+   "Blockchain: Solidity, Ethereum, Web3.js",
+   "BackEnd Languages: C#, Python, C++"
+  ],
+  "certifications": [
+    "Microsoft Certified Professional (MCP) in SQL (70-229)",
+    "MCP in .NET (70-528, 70-536)",
+    "MCP in SharePoint (70-630, 70-542, 70-573)",
+    "Certified Blockchain Expert from Blockchain Council",
+    "FLMI Level 1 in Insurance and Healthcare"
   ],
   "experience": [
-    "5 years of experience in web development",
-    "Worked on various projects using React and Node.js",
-    "Experience with building and deploying web applications"
+    "17 years experienced full stack engineer with a strong background in designing, developing, and maintaining complex web and mobile applications.",
+    "Proven success in delivering projects on time and within budget, with a focus on usability and user experience.",
+    "Skilled in working independently and as part of a team, and able to communicate effectively with both technical and non-technical stakeholders."
   ],
   "projects": [
     {
-      "title": "Project 1",
-      "description": "A web application built using React and Node.js",
-      "link": "https://github.com/username/project1"
+      "title": "Project TURN",
+      "description": "Sell or purchase Diligence blockchain security services from our Web3 industry experts, such as blockchain and Solidity smart contract auditing, with TURN – the world’s first time-based services marketplace.",
+      "link": "https://turnplatform.bid/"
     },
     {
-      "title": "Project 2",
-      "description": "A mobile application built using React Native",
-      "link": "https://github.com/username/project2"
+      "title": "Education DAO",
+      "description": "A decentralized application built using React and Solidity for students to earn NFT for completing educational tasks.",
+      "link": "https://github.com/ConsenSys-Academy/education-dao"
     },
     {
-      "title": "Project 3",
-      "description": "A serverless application built using Node.js and AWS Lambda",
-      "link": "https://github.com/username/project3"
+      "title": "KPMG Global Site",
+      "description": "KPMG Global Site is a website built using React and Node.js for KPMG to showcase their services.",
+      "link": "https://www.kpmg.us/"
     }
   ],
   "education": [
-    "Bachelor's degree in Computer Science from XYZ University",
-    "Master's degree in Software Engineering from ABC University"
+    "Bachelor's degree in Electronics and Communication",
+    "Master's degree in Information Technology"
   ],
   "contact": {
     "email": "your_email@example.com",
