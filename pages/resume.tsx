@@ -12,7 +12,7 @@ interface Props {
     };
 }
 
-const About = ({ education, experience, contact }: Props) => {
+const Resume = ({ education, experience, contact }: Props) => {
     return (
         <>
             <SEO
@@ -64,4 +64,4 @@ export const getStaticProps = async () => {
     }
 }
 
-export default About;
+export default Resume;

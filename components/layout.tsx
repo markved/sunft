@@ -20,31 +20,33 @@ const Layout = ({ children, title = "My App" }: Props) => {
     router.push(path);
   }
 
-  return (    
+  return (
     <div className="bg-gray-200 min-h-screen">
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header className="bg-white p-4">
+      <header className="bg-header-blue p-4">
         <nav className="flex items-center justify-between">
-          <a href="/" className="text-lg font-medium text-gray-800">
+          <a href="/" className="text-lg font-medium">
             Ved Mishra | Full Stack, Blockchain
           </a>
-          <div className="flex items-center">
-            <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/' && 'text-blue-600'}`} onClick={() => handleClick("/")}>Home</a>
-            <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/about' && 'text-blue-600'}`} onClick={() => handleClick("/about")}>About</a>
-            <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/project' && 'text-blue-600'}`} onClick={() => handleClick("/project")}>Project</a>
-            <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/blog' && 'text-blue-600'}`} onClick={() => handleClick("/blog")}>Blog</a>
-            <a href="#" className={`px-2 py-1 mr-2 text-gray-600 ${router.pathname === '/contact' && 'text-blue-600'}`} onClick={() => handleClick("/contact")}>Contact</a>
+          <div className="flex items-start">
+            {isMounted && <SocialMedia color={'white'} />}
+          </div>
+          <div className="flex uppercase text-white items-center">
+            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/' && 'underline underline-offset-8'}`} onClick={() => handleClick("/")}>Home</a>
+            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/project' && 'underline underline-offset-8'}`} onClick={() => handleClick("/project")}>Project</a>
+            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/resume' && 'underline underline-offset-8'}`} onClick={() => handleClick("/resume")}>Resume</a>
+            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/blog' && 'underline underline-offset-8'}`} onClick={() => handleClick("/blog")}>Blog</a>
+            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/contact' && 'underline underline-offset-8'}`} onClick={() => handleClick("/contact")}>Contact</a>
           </div>
         </nav>
       </header>
-      <main className="container mx-auto p-4">{children}</main>
-      <footer className="bg-white p-4">
-       
-        <div className="text-center text-gray-600">  {isMounted && <SocialMedia/>} Copyright © {new Date().getFullYear()}</div>
+      <main className="mx-auto">{children}</main>
+      <footer className="bg-footer-gray p-4">
+        <div className="text-center text-white"> {isMounted && <SocialMedia color={'gray'} />} Copyright © {new Date().getFullYear()}</div>
       </footer>
     </div>
   );
