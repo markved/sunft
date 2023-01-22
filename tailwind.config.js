@@ -12,6 +12,13 @@ module.exports = {
         'footer-gray': '#434E5E',
         'hero-blue':'#41A4F5',
       },
+      listStyleType: {
+        none: 'none',
+        disc: 'disc',
+        decimal: 'decimal',
+        square: 'square',
+        roman: 'upper-roman',
+      },
     },
   },
   plugins: [],

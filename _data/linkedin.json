@@ -1,0 +1,606 @@
+{
+    "public_identifier": "vedmishra",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/vedmishra/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230121%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230121T143155Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=b7d940d73731bfcde4f6e0b3b163327d49244f5efdceae4bc13c4bc797c9cd1f",
+    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/vedmishra/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230121%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230121T143155Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=16545b9cd27d1d67a10753cb285e99154b4fe5f22190010bee21dde7118218d1",
+    "first_name": "Ved",
+    "last_name": "M.",
+    "full_name": "Ved M.",
+    "occupation": "Full Stack Engineer at Merck",
+    "headline": "Technology product/platform engineer in Office 365 | Full Stack | Azure | Blockchain",
+    "summary": "Microsoft, Full Stack, Azure and Blockchain Consultant working in NJ/NY area.\n\nReact/Svelte/Angular - Node.js - JavaScript/TypeScript - Rust/Solidity/C++ - Python - SQL Server - Azure - .NET Framework - C# - SharePoint - Microsoft Visual Studio/Code - XML/XSL/JSON - Power Pivot/BI/Crystal Reports/Spotfire/Tableau/InfoPath - PowerShell - MSPS/MS Dynamics\n\nProficient in design and implementation of Web 2.0 Development, Experience in Web 3.0, extensive hands-on experience in Analysis, Designing, Development and Testing on Modern Web on Internet, Intranet and Extranet Architecture.\n\nWorked in Merck, Johnson and Johnson, KPMG and MetLife.\n\nManaged various teams of over 50 resources in a global environment for high-visibility projects.\n\nDevelopment experience on Microsoft Azure, Office 365 and other cloud enabled MS applications\n\nManaged projects in Johnson and Johnson using agile methodologies. \nInvolved in Product Backlog preparation, Scrum meetings and Sprint planning.\n\nExtended Office 365 sites with SharePoint Framework Applications utilizing Azure functions, SQL, Kendo, agGrid, Office UI fabric and React.",
+    "country": "US",
+    "country_full_name": "United States of America",
+    "city": "United States",
+    "state": null,
+    "experiences": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2013
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 1,
+                "year": 2019
+            },
+            "company": "Merck",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/merck/",
+            "title": "Full Stack Engineer",
+            "description": "Merck is an American pharmaceutical company and is one of the largest pharmaceutical companies in the world. I work for the GTO department, which provides standard tools and services to be used by various other departments. As full stack engineer and tech project manager, I work with my current team to understand the gap between the current system and their immediate and future needs and then propose the design and approach to implement changes. I also develop key modules and help other developers understand and utilize Azure, SharePoint Framework, Modern Web technologies like React/Angular/Node.js. We manage our work in JIRA and Azure DevOps",
+            "location": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C560BAQEmMRY9KRHvag/company-logo_400_400/0/1656623373368?e=1672272000&v=beta&t=_gOm9rZm3dz8xTP6u5vV7oP4syp3e3csLE8omkfCTsk"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 10,
+                "year": 2010
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 5,
+                "year": 2013
+            },
+            "company": "KPMG",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/kpmg-us/",
+            "title": "Senior Software Engineer",
+            "description": "I was part of IT Department which globally serve IT needs for several entities related to Tax, Audit and Advisory spreading over 88 countries. I played role of designing, developing, managing, consulting and technical writing of various projects on MOSS 2007 and SharePoint 2010 platform.",
+            "location": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQEU7SOLxePw0w/company-logo_400_400/0/1659971265669?e=1672272000&v=beta&t=6YitM8EGopDlQ-og2m0Gw0G7-aWmNI42tPBn_IA40sw"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 11,
+                "year": 2007
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 10,
+                "year": 2010
+            },
+            "company": "Johnson & Johnson",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/johnson-&-johnson/",
+            "title": "Technical Lead",
+            "description": "Johnson and Johnson specialize in medical devices and instruments, healthcare and pharmaceuticals. They wanted to centralize their IT department. I provided solutions which include architecture, development, consulting and support to bring various operating companies under one ITS umbrella. A few of the responsibilities were requirement gathering from Clients, Release and Sprint planning and SOW preparation. As a developer, I was responsible for designing, developing, deploying and managing various solutions on SharePoint platform.",
+            "location": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C4D0BAQFwn8CHaum_AA/company-logo_400_400/0/1519856123566?e=1672272000&v=beta&t=Vc8rSdTRXddC4AEM9qXOzWWD7qwN4oKn-MW6pMTWYw4"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 6,
+                "year": 2005
+            },
+            "ends_at": {
+                "day": 30,
+                "month": 9,
+                "year": 2007
+            },
+            "company": "MetLife",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/metlife/",
+            "title": "Developer",
+            "description": "I gained hands on experience in insurance domain, ASP, VB, SharePoint and other Microsoft related technologies. I completed Fellow Life Management Institute (FLMI) level 1 certification.",
+            "location": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C4E0BAQGvfZGd31Hw_Q/company-logo_400_400/0/1519855879245?e=1672272000&v=beta&t=3_OzrH9wCwIyCrxVj05zytF8C3x_RyFI8Fl_RdU0HOA"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 6,
+                "year": 2005
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 10,
+                "year": 2010
+            },
+            "company": "Tata Consultancy Services",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/tata-consultancy-services/",
+            "title": "Technical Lead",
+            "description": "Lead Offshore development team and Technical demonstration to clients. Responsible for the designing, developing, and service delivery of a business process monitoring solution built on SharePoint. Work includes building SharePoint site collections & web applications, developing SharePoint workflows, developing and deploying SharePoint features, Web Parts and customizing document Libraries.",
+            "location": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C4D0BAQFPP1NRP4F5dQ/company-logo_400_400/0/1656657976685?e=1672272000&v=beta&t=i__P4P1lL1-O-o38mBRfhr8-DRtO2nbjitr36xd8HQo"
+        }
+    ],
+    "education": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2007
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 12,
+                "year": 2008
+            },
+            "field_of_study": "Information Technology",
+            "degree_name": "MBA",
+            "school": "Alliance Business School",
+            "school_linkedin_profile_url": null,
+            "description": null,
+            "logo_url": null,
+            "grade": null,
+            "activities_and_societies": null
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 1,
+                "year": 2001
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 12,
+                "year": 2005
+            },
+            "field_of_study": "Electronics and Communications",
+            "degree_name": "B.E.",
+            "school": "Visvesvaraya Technological University",
+            "school_linkedin_profile_url": null,
+            "description": null,
+            "logo_url": "https://media-exp1.licdn.com/dms/image/C4D0BAQEXLsH7UX9uMw/company-logo_400_400/0/1519865269158?e=1672272000&v=beta&t=tEGa6lE3IAFOt-BgbqoS2tKYp_nUdCi-FnXDUUSzwSY",
+            "grade": null,
+            "activities_and_societies": null
+        }
+    ],
+    "languages": [
+        "Hindi"
+    ],
+    "accomplishment_organisations": [],
+    "accomplishment_publications": [
+        {
+            "name": "Intelligent big boy Microsoft BI",
+            "publisher": "Trust Radius",
+            "published_on": {
+                "day": 1,
+                "month": 1,
+                "year": 2016
+            },
+            "description": "Microsoft Business Intelligence (MS BI) is integral part of technology eco-system across whole organization. Various tools of the MS BI stack are used to Extract Transform and Load (ETL) data from various data sources and provide and platform to do analytics using pivot tables, pivot charts, power BI, SharePoint, SSRS reports, BI Semantic Model (BISM) reports etc.",
+            "url": "https://www.trustradius.com/reviews/microsoft-bi-2016-02-19-11-12-28"
+        },
+        {
+            "name": "Use of WSS web service for List/Library content updates",
+            "publisher": "Nothing But SharePoint",
+            "published_on": {
+                "day": 1,
+                "month": 1,
+                "year": 2012
+            },
+            "description": "WSS 3.0 (Windows SharePoint Services) and MOSS 2007 (Microsoft Office SharePoint Server) supports interoperability and remote operations through a set of web services.There are number of approaches for programmatic access to SharePoint, such as the object model, web services, RPC over HTTP, as well as WebDAV.",
+            "url": "https://www.nothingbutsharepoint.com/sites/devwiki/articles/Pages/Use-of-WSS-web-service-for-List-Library-content-updates.aspx"
+        },
+        {
+            "name": "Crawled and Managed properties in MOSS 2007",
+            "publisher": "MS SharePoint Tips",
+            "published_on": {
+                "day": 1,
+                "month": 1,
+                "year": 2011
+            },
+            "description": "I understand that SharePoint lists and libraries contain extra columns (i.e. Author, Description, Status etc) that can be used to group, sort and filter content items as needed. These extra columns are known as \"Metadata\".I also understand that metadata is collected by SharePoint's search crawler and can be used in various ways by developers and administrators. I would like to understand more about this.",
+            "url": "http://mssharepointtips.com/tip.asp?id=1177"
+        },
+        {
+            "name": "SharePoint Designer is very slow? Follow these practices to make your life easier",
+            "publisher": "Nothing But SharePoint",
+            "published_on": {
+                "day": 1,
+                "month": 1,
+                "year": 2011
+            },
+            "description": "SharePoint designer is a terrific free tool to work with SharePoint Pages. But when you open SharePoint Designer and start using these features, the painful slowness of this tool makes you frustrated and you wonder about its usability. You start blaming Microsoft for this tool. Well, Microsoft is too big to answer to anyone. So instead of pondering, you can adhere to the following practices to make your life easier.",
+            "url": "https://www.nothingbutsharepoint.com/sites/eusp/Pages/SharePoint-Designer-is-very-slow-Follow-these-practices-to-make-your-life-easier.aspx"
+        },
+        {
+            "name": "Using XML and XSL in SharePoint",
+            "publisher": "MS SharePoint Tips",
+            "published_on": {
+                "day": 1,
+                "month": 1,
+                "year": 2011
+            },
+            "description": "XSLT (eXtensible Stylesheet Language Transformations) comes to the rescue for XML data presentation. XSLT is the recommended style sheet language of XML. XSLT can be used to transform XML into HTML, before it is displayed by a browser. There are various mechanisms in SharePoint which can be used to display XML data using XSL Transformation.",
+            "url": "http://www.mssharepointtips.com/tip.asp?id=1159"
+        },
+        {
+            "name": "RSS Feed in SharePoint",
+            "publisher": "Nothing But SharePoint",
+            "published_on": {
+                "day": 1,
+                "month": 1,
+                "year": 2011
+            },
+            "description": "There can be two types of RSS Feed links: Internal or External.Any RSS Feed link (xml) which is hosted inside a company intranet is categorized as a RSS Feed internal link. SharePoint servers’ security can be configured in two ways: Kerberos or NTLM.",
+            "url": "https://www.nothingbutsharepoint.com/sites/itpro/Pages/RSS-Feed-in-SharePoint.aspx"
+        },
+        {
+            "name": "What is blockchain?",
+            "publisher": null,
+            "published_on": null,
+            "description": "Blockchain is an extraordinary technology that underpins Bitcoin and other Cryptocurrencies. It was brought into existence by a cryptographer with an anonymous identity called Satoshi Nakamoto. It has evolved significantly since then.",
+            "url": "https://vedmishra.net/2018/01/10/what-is-blockchain/"
+        }
+    ],
+    "accomplishment_honors_awards": [],
+    "accomplishment_patents": [],
+    "accomplishment_courses": [],
+    "accomplishment_projects": [],
+    "accomplishment_test_scores": [],
+    "volunteer_work": [],
+    "certifications": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 4,
+                "year": 2018
+            },
+            "ends_at": null,
+            "name": "Certified Blockchain Expert",
+            "license_number": "11505541",
+            "display_source": "credential.net",
+            "authority": "Blockchain Council",
+            "url": "https://www.credential.net/8kckk6zt"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 5,
+                "year": 2014
+            },
+            "ends_at": null,
+            "name": "Server Virtualization with Windows Server Hyper-V and System Center",
+            "license_number": "74-409",
+            "display_source": "microsoft.com",
+            "authority": "Microsoft",
+            "url": "http://www.microsoft.com/learning/en-us/exam.aspx?id=74-409"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 2,
+                "year": 2012
+            },
+            "ends_at": null,
+            "name": "SharePoint 2010, Application Development",
+            "license_number": "70-573",
+            "display_source": "microsoft.com",
+            "authority": "Microsoft",
+            "url": "https://www.microsoft.com/learning/en-us/exam-70-573.aspx"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 9,
+                "year": 2008
+            },
+            "ends_at": null,
+            "name": "Microsoft Office SharePoint Server 2007 - Application Development",
+            "license_number": "70-542",
+            "display_source": "microsoft.com",
+            "authority": "Microsoft",
+            "url": "https://www.microsoft.com/learning/en-us/exam.aspx?ID=70-542"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 8,
+                "year": 2008
+            },
+            "ends_at": null,
+            "name": "Microsoft Office SharePoint Server 2007, Configuring",
+            "license_number": "70-630",
+            "display_source": "microsoft.com",
+            "authority": "Microsoft",
+            "url": "http://www.microsoft.com/learning/en-us/exam.aspx?ID=70-630"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 10,
+                "year": 2007
+            },
+            "ends_at": null,
+            "name": "Microsoft .NET Framework 2.0 - Web-based Client Development",
+            "license_number": "70-528",
+            "display_source": "microsoft.com",
+            "authority": "Microsoft",
+            "url": "http://www.microsoft.com/learning/en-us/exam.aspx?ID=70-528"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 9,
+                "year": 2007
+            },
+            "ends_at": null,
+            "name": "Microsoft .NET Framework - Application Development Foundation",
+            "license_number": "70-536",
+            "display_source": "microsoft.com",
+            "authority": "Microsoft",
+            "url": "https://www.microsoft.com/learning/en-us/exam.aspx?id=70-536"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 6,
+                "year": 2007
+            },
+            "ends_at": null,
+            "name": "Designing and Implementing Databases with Microsoft SQL Server™ 2000 Enterprise Edition",
+            "license_number": "70-229",
+            "display_source": "microsoft.com",
+            "authority": "Microsoft",
+            "url": "http://www.microsoft.com/learning/en-us/exam.aspx?ID=70-229"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 3,
+                "year": 2006
+            },
+            "ends_at": null,
+            "name": "LOMA 290 — Insurance Company Operations (FLMI)",
+            "license_number": null,
+            "display_source": "loma.org",
+            "authority": "LOMA",
+            "url": "http://www.loma.org/ProfDev/Courses/Listings/LOMA_290.aspx"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 12,
+                "year": 2005
+            },
+            "ends_at": null,
+            "name": "LOMA 280 — Principles of Insurance",
+            "license_number": null,
+            "display_source": "loma.org",
+            "authority": "LOMA",
+            "url": "http://www.loma.org/ProfDev/Courses/Listings/LOMA_280.aspx"
+        }
+    ],
+    "connections": 500,
+    "people_also_viewed": [
+        {
+            "link": "https://www.linkedin.com/in/nehabharti",
+            "name": "Neha Bharti",
+            "summary": "Program and Portfolio Manager at Pfizer",
+            "location": "New York City Metropolitan Area"
+        },
+        {
+            "link": "https://ca.linkedin.com/in/serjm",
+            "name": "Sergei M.",
+            "summary": "Full Stack MERN Developer at Serbay Digital creating or improving websites and applications for clients",
+            "location": "Burnaby, BC"
+        },
+        {
+            "link": "https://www.linkedin.com/in/eliotweber",
+            "name": "Eliot Weber",
+            "summary": "Principal Blockchain Engineer at Astra - The Social Supercomputer",
+            "location": "Santa Cruz, CA"
+        },
+        {
+            "link": "https://www.linkedin.com/in/vivek-shrivastava",
+            "name": "Vivek Shrivastava",
+            "summary": "Salesforce CRM Business Analyst",
+            "location": "Plainsboro, NJ"
+        },
+        {
+            "link": "https://www.linkedin.com/in/shaurya-sarma",
+            "name": "Shaurya Sarma",
+            "summary": "Software Developer and 3D Artist | Student, Intern, Volunteer",
+            "location": "Monroe, NJ"
+        },
+        {
+            "link": "https://www.linkedin.com/in/rajiv-ranjan-6982b02",
+            "name": "Rajiv Ranjan",
+            "summary": "Asst. Vice President  Genpact Headstrong, Capital Market IT",
+            "location": "New York City Metropolitan Area"
+        },
+        {
+            "link": "https://uk.linkedin.com/in/nihalmarion",
+            "name": "nihal castelino",
+            "summary": "Infrastructure and Cloud Architect",
+            "location": "Warrington"
+        },
+        {
+            "link": "https://uk.linkedin.com/in/alfred-mbondiya-23415b30",
+            "name": "Alfred Mbondiya",
+            "summary": "Lives in Belfast",
+            "location": "Belfast Metropolitan Area"
+        },
+        {
+            "link": "https://in.linkedin.com/in/srikanth-chiravuri-b4367a176",
+            "name": "Srikanth Chiravuri",
+            "summary": "Manager",
+            "location": "West Godavari"
+        },
+        {
+            "link": "https://www.linkedin.com/in/nicholas-riveraleer",
+            "name": "Nicholas Rivera",
+            "summary": "Blockchain/Smart Contract/Full-Stack Web Developer",
+            "location": "Washington, DC"
+        },
+        {
+            "link": "https://in.linkedin.com/in/krishnaprasadh",
+            "name": "Krishna Prasad",
+            "summary": "Entrepreneur",
+            "location": "India"
+        },
+        {
+            "link": "https://www.linkedin.com/in/augie-de-blieck-jr-40754366",
+            "name": "Augie De Blieck Jr",
+            "summary": "Senior Application Developer, UPS",
+            "location": "Wayne, NJ"
+        },
+        {
+            "link": "https://in.linkedin.com/in/vidyasagar-guru-29901a1a",
+            "name": "Vidyasagar Guru",
+            "summary": "Design Engineer at Black pepper technologies Pvt Ltd",
+            "location": "India"
+        },
+        {
+            "link": "https://www.linkedin.com/in/james-romano-9a266a8",
+            "name": "James Romano",
+            "summary": "Application Development Manager - Business Technology",
+            "location": "Princeton, NJ"
+        },
+        {
+            "link": "https://www.linkedin.com/in/rohit012",
+            "name": "Rohit Chopra",
+            "summary": "Senior Software Engineer at Uber",
+            "location": "San Jose, CA"
+        },
+        {
+            "link": "https://www.linkedin.com/in/rajesh-balaji-74787932",
+            "name": "Rajesh Balaji",
+            "summary": "Senior Software Engineer (Full Stack & DevOps) at Microsoft (via MindTree Ltd)",
+            "location": "Bellevue, WA"
+        },
+        {
+            "link": "https://www.linkedin.com/in/arnav-gupta",
+            "name": "Arnav G.",
+            "summary": "Lead Java Developer ✦AWS Solutions Architect Professional✦AWS Certified Developer✦CEH✦ Permanent Resident",
+            "location": "Denver, CO"
+        },
+        {
+            "link": "https://www.linkedin.com/in/gowrisankar-ponnusamy",
+            "name": "Gowri Sankar Ponnusamy",
+            "summary": "Senior Java Full Stack Developer",
+            "location": "Henrico County, VA"
+        },
+        {
+            "link": "https://www.linkedin.com/in/xian-lin-42712b28",
+            "name": "Xian Lin",
+            "summary": "Software Engineer |  Haven Technologies",
+            "location": "New York, NY"
+        },
+        {
+            "link": "https://www.linkedin.com/in/nataliepatricetucker",
+            "name": "Natalie Patrice Tucker",
+            "summary": "Senior Accessibility Lead at Spotify",
+            "location": "Atlanta Metropolitan Area"
+        },
+        {
+            "link": "https://www.linkedin.com/in/manish-sharma-20579a84",
+            "name": "Manish Sharma",
+            "summary": "want to start buisness at my own",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/richard-murray-14a4689",
+            "name": "Richard Murray",
+            "summary": "Director, IT Strategy & Architecture at Merck",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/raghavendra-kenchirappa-siddappa-3a319013",
+            "name": "Raghavendra Kenchirappa Siddappa",
+            "summary": "Product Quality Manager at Sky",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/mallikarjuna-khened-6a80711",
+            "name": "Mallikarjuna Khened",
+            "summary": "Real Estate Business",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/ananthkv",
+            "name": "Ananth Venugopal",
+            "summary": "Software Architect",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/prasanna-ss-8a44a882",
+            "name": "prasanna ss",
+            "summary": "DataWarehouse Engineer at Turning Point Global Solutions",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/siddharth-mirajkar-29816132",
+            "name": "Siddharth Mirajkar",
+            "summary": "Onsite Lead Identify Management at Walgreens",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/petelega",
+            "name": "Peter Lega",
+            "summary": "IT Strategy Technology Realization",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/vikram-achar-0206b416",
+            "name": "vikram Achar",
+            "summary": "Principal Escalation Engineer at Dell EMC",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/shweta-bharti-4813022",
+            "name": "Shweta Bharti",
+            "summary": "Process member",
+            "location": null
+        }
+    ],
+    "recommendations": [
+        "Thomas J Helmstetter\n\n\n\nVed partnered with me on a rather challenging SharePoint solution that had a solid business owner with complex processes and technical requirements.  There were many challenges throughout the project but Ved delivered workable solutions each and every time that remain in place to this day.\r\n\r\nVed has an excellent work ethic, he does far more than deliver solutions.  He invests the time to understand the WHY behind need for technology solutions which shows in his deliverables, resulting in greater solution acceptance and adoption.\r\n\r\nYou can not miss with Ved on your team.",
+        "Gobinath Mallaiyan\n\n\n\nVed is a proactive contributor who would make a great addition to a team. As a person he is most disciplined and punctual. Even under a stressful condition he works efficiently. Many times i was amused with his determination & hard work.  \r\n\r\nVed have excellent skills in microsoft technologies. He is extremely enthusiastic about his work that involves Sharepoint & related technologies.",
+        "Melissa Brown Blaeuer\n\n\n\nVed is an experienced, proficient web developer and easygoing, congenial colleague who is an asset to any team. I worked with Ved for a number of years in Global Knowledge Management, customizing SharePoint web applications for bespoke KPMG communications and knowledge systems requirements.",
+        "James Malisse\n\n\n\nI've known Ved for a little over two years. He has the ability to listen to a client’s business problem and use his technical and functional acumen to create and deliver a solution that adds business value. Ved has a unique skill set where he can be effective in front of the client as a trusted adviser as well as a technical asset who can deliver the business solution.",
+        "Jerry Harmon\n\n\n\nVed worked for me developping a metrics dashboard.  His ability to jump into an unknown environment, figure everything out, and begin displaying data in very short time.  His understanding of database structures, SQL and the like was amazing.   Ved is smart, creative, and innovative and would be a great asset to any data driven team.",
+        "surya mishra\n\n\n\nThe first thing to notice about Ved is his calmness in solving problems. He always comes up with alternate ideas to approach a problem. It has been a pleasure working with him at Johnson & Johnson Ltd.  ",
+        "Shubhadeep Ghosh\n\n\n\nVed is very strong in SharePoint and Microsoft technologies. His focus on high-quality delivery along with his strong understanding makes him a asset for any organization.",
+        "Satyendra Chauhan\n\n\n\nI and Ved had been working on the same project for quite a long time and I happen to sit beside him watching all his daily activities. Ved is an avid learner and always keen on new technologies.He is also well focused and ambitious. My best wishes for him.",
+        "Aritram Chandra\n\n\n\nI recommend Ved as a person with great skills and deep experience in SharePoint business solutions. He is proactive, strong and intelligent professional.",
+        "Leon (Skip) Krals\n\n\n\nI have worked closely with Ved as an internal customer on a critical SharePoint implementation project. I was extremely impressed with his knowledge and understanding of my business needs."
+    ],
+    "activities": [
+        {
+            "title": "View my verified achievement from BNP Paribas.",
+            "link": "https://www.linkedin.com/signup/cold-join",
+            "activity_status": "Liked by Ved Mishra"
+        },
+        {
+            "title": "I am excited to share that I am joining Salesforce after 15 years at IBM.",
+            "link": "https://www.linkedin.com/signup/cold-join",
+            "activity_status": "Liked by Ved Mishra"
+        },
+        {
+            "title": "Photo",
+            "link": "https://www.linkedin.com/signup/cold-join",
+            "activity_status": "Liked by Ved Mishra"
+        }
+    ],
+    "similarly_named_profiles": [
+        {
+            "name": "Ved Mishra",
+            "link": "https://in.linkedin.com/in/ved-mishra-085ab712a",
+            "summary": "Assistant Product Manager at SecureNow Insurance Broker",
+            "location": "Gurgaon"
+        },
+        {
+            "name": "Ved Mishra",
+            "link": "https://in.linkedin.com/in/ved-mishra-431018218",
+            "summary": "Working",
+            "location": "Mathura"
+        },
+        {
+            "name": "Ved Mishra",
+            "link": "https://in.linkedin.com/in/ved-mishra-24aa6956",
+            "summary": "Senior Manager at RSPL-Ghari Detergent/Namaste India Dairy",
+            "location": "Kanpur Nagar"
+        },
+        {
+            "name": "Ved Mishra",
+            "link": "https://in.linkedin.com/in/ved-mishra-bb62892b",
+            "summary": "Technical Director at SVM Meditech",
+            "location": "Solan"
+        }
+    ],
+    "articles": [],
+    "groups": []
+}

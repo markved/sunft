@@ -24,28 +24,10 @@ const Index = ({ skills, experience, certifications, projects, education, contac
       />
       <Layout title="Home Page">
         <div>
-          <div className="py-20 bg-hero-blue">
+          <div className="py-10 bg-hero-blue">
             <div className="container mx-auto px-6">
-              {/* <div className="grid grid-cols-7">
-                <div className="col-span-1">
-                  <img src="https://i.imgur.com/mcbNllL.jpg" alt="Ved Mishra" className="rounded-full h-32 w-32 mx-auto" />
-                </div>
-                <div className="col-span-6">
-                  <h2 className="text-xl font-bold mb-2 text-white">
-                    Hello, my name is Ved Mishra!
-                  </h2>
-                  <h3 className="text-xl mb-8 text-gray-200">
-                    17 years experienced full stack engineer with a strong background in designing, developing, and maintaining web and mobile applications.<br></br>
-                    Proven success in delivering projects on time and within budget, with a focus on usability and user experience.<br></br>
-                    Skilled in working independently and as part of a team, and able to communicate effectively with both technical and non-technical stakeholders.<br></br>
-                  </h3>
-                  <button className="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
-                    Hire Me
-                  </button>
-                </div>
-              </div> */}
               <div className="flex flex-col md:flex-row">
-              <img src="https://i.imgur.com/mcbNllL.jpg" alt="Ved Mishra" className="rounded-full h-32 w-32 mx-auto" />
+                <img src="https://i.imgur.com/mcbNllL.jpg" alt="Ved Mishra" className="rounded-full p-2 h-44 w-44 mx-auto md:h-full md:w-48" />
                 <div className="text-center md:text-left">
                   <h2 className="text-xl font-bold mb-2 text-white">
                     Hello, my name is Ved Mishra!
@@ -63,40 +45,74 @@ const Index = ({ skills, experience, certifications, projects, education, contac
 
             </div>
           </div>
-          <div className="text-center">
-            <div className="grid grid-cols-2">
-              <div className="col-span-1">
-                <h1 className="text-3xl font-medium mb-4">Skills</h1>
-                <ul className="list-none pl-5">
-                  {skills.map((skill) => (
-                    <li key={skill} className="mb-2 text-lg">
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
+          <div className="container mx-auto px-6">
+            <div className="text-center">
+              <h1 className="text-3xl font-medium mb-4">Skills Overview</h1>
+              <div className="mb-4">I have more than 17 years' experience building rich web applications for clients all over the world. Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</div>
+            </div>
+          </div>
+
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="bg-white rounded-lg shadow-md m-4 p-4">
+                <img src="/assets/home/icons8-front-end-64.png" alt="Front End" className="w-20 h-20 -mt-10 mx-auto" />
+                <div className="p-4">
+                  <h3 className="text-lg font-medium text-center">Frontend</h3>
+                  <ul className="list-square">
+                    <li>React</li>
+                    <li>NextJS</li>
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
               </div>
-              <div className="col-span-1">
-                <h1 className="text-3xl font-medium mb-4">Certifications</h1>
-                <ul className="list-none pl-5">
-                  {certifications.map((certification) => (
-                    <li key={certification} className="mb-2 text-lg">
-                      {certification}
-                    </li>
-                  ))}
-                </ul>
+              <div className="bg-white rounded-lg shadow-md m-4 p-4">
+                <img src="/assets/home/icons8-database-50.png" alt="Backend" className="w-20 h-20 -mt-10 mx-auto" />
+                <div className="p-4">
+                  <h3 className="text-lg font-medium text-center">Backend</h3>
+                  <ul className="list-square">
+                    <li>C#</li>
+                    <li>NestJS</li>
+                    <li>Python</li>
+                    <li>RUST</li>
+                    <li>C++</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg shadow-md m-4 p-4">
+                <img src="/assets/home/icons8-more-100.png" alt="Other" className="w-28 h-28 -mt-14 mx-auto" />
+                <div className="p-4">
+                  <h3 className="text-lg font-medium text-center">Other</h3>
+                  <ul className="list-square">
+                    <li>Docker</li>
+                    <li>Azure</li>
+                    <li>AWS</li>
+                    <li>Ethereum/Solana</li>
+                  </ul>
+                </div>
               </div>
             </div>
-
-
-            <h1 className="text-3xl font-medium mb-4">Experience</h1>
-            <ul className="list-none pl-5">
-              {experience.map((exp) => (
-                <li key={exp} className="mb-2 text-lg">
-                  {exp}
-                </li>
-              ))}
-            </ul>
           </div>
+
+          {/* <section className="flex snap-x snap-mandatory flex-nowrap gap-5 overflow-x-auto px-5 pb-5 pt-5">
+            <div className="flex-none snap-center snap-always bg-white rounded-lg shadow-md p-4">
+              <p>I have more than 17 years' experience building rich web applications for clients all over the world.<br></br> Below is a quick overview of my main technical skill sets and tools I use. Want to find out more about my experience?</p>
+            </div>
+            <div className="flex-none snap-center snap-always bg-white rounded-lg shadow-md p-4">
+              <p>content goes here</p>
+            </div>
+            <div className="flex-none snap-center snap-always bg-white rounded-lg shadow-md p-4">
+              <p>content goes here</p>
+            </div>
+            <div className="flex-none snap-center snap-always bg-white rounded-lg shadow-md p-4">
+              <p>content goes here</p>
+            </div>
+            <div className="flex-none snap-center snap-always bg-white rounded-lg shadow-md p-4">
+              <p>content goes here</p>
+            </div>           
+          </section> */}
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects.map((project) => (
               <ProjectCard key={project.title} project={project} />
