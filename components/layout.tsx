@@ -28,19 +28,16 @@ const Layout = ({ children, title = "My App" }: Props) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <header className="bg-header-blue p-4">
-        <nav className="flex items-center justify-between">
-          <a href="/" className="text-lg font-medium">
-            Ved Mishra | Full Stack, Blockchain
-          </a>
+        <nav className="items-center justify-between md:flex">
           <div className="flex items-start">
             {isMounted && <SocialMedia color={'white'} />}
           </div>
           <div className="flex uppercase text-white items-center">
-            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/' && 'underline underline-offset-8'}`} onClick={() => handleClick("/")}>Home</a>
-            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/project' && 'underline underline-offset-8'}`} onClick={() => handleClick("/project")}>Project</a>
-            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/resume' && 'underline underline-offset-8'}`} onClick={() => handleClick("/resume")}>Resume</a>
-            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/blog' && 'underline underline-offset-8'}`} onClick={() => handleClick("/blog")}>Blog</a>
-            <a href="#" className={`px-2 py-1 mr-2  ${router.pathname === '/contact' && 'underline underline-offset-8'}`} onClick={() => handleClick("/contact")}>Contact</a>
+            <a href="#" className={`px-1 py-1 mr-1  ${router.pathname === '/' && 'underline underline-offset-8'}`} onClick={() => handleClick("/")}>Home</a>
+            <a href="#" className={`px-1 py-1 mr-1  ${router.pathname === '/project' && 'underline underline-offset-8'}`} onClick={() => handleClick("/project")}>Project</a>
+            <a href="#" className={`px-1 py-1 mr-1  ${router.pathname === '/resume' && 'underline underline-offset-8'}`} onClick={() => handleClick("/resume")}>Resume</a>
+            <a href="#" className={`px-1 py-1 mr-1  ${router.pathname === '/blog' && 'underline underline-offset-8'}`} onClick={() => handleClick("/blog")}>Blog</a>
+            <a href="#" className={`px-1 py-1 mr-1  ${router.pathname === '/contact' && 'underline underline-offset-8'}`} onClick={() => handleClick("/contact")}>Contact</a>
           </div>
         </nav>
       </header>
