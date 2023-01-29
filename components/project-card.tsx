@@ -14,7 +14,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
       <h2 className="text-lg font-medium mb-2">{project.title}</h2>
       <p className="text-gray-700">{project.description}</p>
       <a href={project.link} className="text-blue-500 underline">
-        View Project
+        View NFTs
       </a>
     </div>
   );

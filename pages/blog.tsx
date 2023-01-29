@@ -20,7 +20,7 @@ const Blog = ({ allPosts }: Props) => {
             />
             <Layout title="Blog">
                 <div className="bg-white p-4">
-                    <h1 className="text-2xl font-medium text-gray-800">Full Stack Blockchain Development: Tips, Tricks, and Techniques</h1>
+                    <h1 className="text-2xl font-medium text-gray-800">Learning about Blockchain</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                         {allPosts.map((post: Post) => (
                             <div key={post.title} className="bg-white p-4 rounded-lg shadow-md">
