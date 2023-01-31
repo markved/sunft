@@ -27,7 +27,7 @@ const Layout = ({ children, title = "My App" }: Props) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header className="bg-header-blue p-4">
+      <header className="bg-purple-400 p-4">
         <nav className="items-center justify-between md:flex">
           <div className="flex items-start">
             {isMounted && <SocialMedia color={'white'} />}
