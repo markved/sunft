@@ -24,7 +24,7 @@ const Index = ({ skills, experience, certifications, projects, education, contac
       />
       <Layout title="Home Page">
         <div>
-          <div className="py-10 bg-hero-blue">
+          <div className="py-10 bg-purple-600">
             <div className="container mx-auto px-6">
               <div className="flex flex-col md:flex-row">
                 <div className="text-center md:text-left">
