@@ -12,10 +12,12 @@ const CreateEvent = () => {
     const handleSubmit = async (event: any) => {
         // Stop the form from submitting and refreshing the page.
         event.preventDefault()
-
+        
         // Get data from the form.
         const data = {
             name: event.target.name.value,
+            description: event.target.description.value,
+            type: event.target.eventType.value,
         }
 
         // Send the data to the server in JSON format.
@@ -56,12 +58,38 @@ const CreateEvent = () => {
                 <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
                     <div className="mb-4">
                         <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-                            Name:
+                            Issuing Authority:
                         </label>
                         <input
                             type="text"
                             id="name"
                             name="name"
+                            className="w-full border border-gray-400 p-2 rounded-lg"
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="eventType" className="block text-gray-700 font-medium mb-2">
+                            Event Type:
+                        </label>
+                        <select
+                            id="eventType"
+                            name="eventType"
+                            className="w-full border border-gray-400 p-2 rounded-lg"
+                        >
+                            <option value="tournament">Tournament</option>
+                            <option value="conference">Conference</option>
+                            <option value="academic">Academic</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="description" className="block text-gray-700 font-medium mb-2">
+                            Request Description:
+                        </label>
+                        <input
+                            type="text"
+                            id="description"
+                            name="description"
                             className="w-full border border-gray-400 p-2 rounded-lg"
                         />
                     </div>

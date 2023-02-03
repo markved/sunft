@@ -18,6 +18,8 @@ export default async function handler(req, res) {
         const result = await prisma.event.create({
             data: {
               name: body.name,
+              type: body.type,
+              description: body.description,
             },
           })
         //   return result;
