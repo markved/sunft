@@ -29,17 +29,18 @@ const Index = ({ skills, experience, certifications, projects, education, contac
               <div className="flex flex-col md:flex-row">
                 <div className="text-center md:text-left">
                   <h2 className="text-xl font-bold mb-2 text-white">
-                    Welcome to NFT Marketplace
+                  Discover the benefits of Digital Certificates, the future of truly digital and permanent certificate recognition. 
                   </h2>
-                  <h3 className="text-xl mb-8 text-gray-200">
-                  The NFT Rewards Platform is a decentralized application that allows users to earn unique, non-fungible tokens (NFTs) by participating in a variety of events, passing certain tests, and winning competitions. <br></br>
-                  By creating a community of engaged users who are interested in earning and collecting unique NFTs, the platform aims to attract a critical customer base and drive user engagement. <br></br>
-                  The platform also aims to be profitable for investors by providing a way for them to monetize their NFTs and by creating a marketplace for buying and selling NFTs.<br></br>
-
+                  <h3 className="text-xl mb-8 text-gray-200">  
+                  This decentralized platform provides organizations the ability to generate and distribute tamper-proof Digital Certificates to their participants. <br></br>
+                  By fostering a community of engaged users who value collecting unique Certificates, organizations can offer additional value to their participants by eliminating the need for physical certificates that are susceptible to counterfeiting or damage. <br></br>
+                  Would you like to create these secure digital certificates for your members? <br></br>
                   </h3>
+                  <a href="./event">
                   <button className="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider">
-                    Explore
+                    Create
                   </button>
+                  </a>
                 </div>
               </div>
 
